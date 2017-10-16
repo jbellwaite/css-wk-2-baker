@@ -110,6 +110,7 @@ p {
 }
 
 h3 {
+  padding-top: 30px;
   text-align: center;
   font-size: 36px;
   font-weight: lighter;
@@ -161,14 +162,17 @@ h3 {
   }
 
   .gallerycol {
-    width: 30%;
+    width: 33%;
     /*float: left;*/
     text-align: center;
     color: #890101;
   }
   .small, .large {
-    font-size: 12px;
+    font-size: 10px;
     /*font-family: sans-serif;*/
+  }
+  h3 {
+    padding-top: 0px;
   }
 }
 
@@ -184,36 +188,38 @@ h3 {
 
   #logotext {
     position: absolute;
-    top: 5%;
+    top: 7%;
     left: 50%;
     margin-right: 50%;
     transform: translateX(-50%);
     float: left;
     margin: 3px;
+    padding-bottom: 0px;
   }
 
-    #headerwrapper {
+  #headerwrapper {
     display: inline-block;
+    top: -30px;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
+    position: relative;
     width: 100%
   }
 
   .headercol {
     /*float: left;*/
-    width: 30%;
+    width: 33%;
     text-align: center;
     /*overflow: none;*/
     color: #890101;
     /*position: absolute;*/
     /*top: 0px;*/
   }
-
+/*
   .small, .large {
-    font-size: 10px;
+    font-size: 14px;
     font-family: sans-serif;
-  }
+  }*/
 
   .bodywrapper {
     /*width: 75%;*/
@@ -224,17 +230,24 @@ h3 {
   }
 
   .line {
-  width: 100%;
-}
+    width: 100%;
+  }
 
-h3 {
-  font-size: 23px;
-  font-weight: lighter;
-  margin-bottom: 1px;
-}
+  h3 {
+    font-size: 23px;
+    font-weight: lighter;
+    margin-bottom: 1px;
+    margin-top: 0px;
+  }
 
-#victors {
-  font-size: 26px;
-}
+  #victors {
+    font-size: 26px;
+  }
+  .gallerycol {
+    width: 50%;
+    /*float: left;*/
+    text-align: center;
+    color: #890101;
+  }
 
 }
