@@ -1,0 +1,140 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+@media screen and (max-width:1499px) {
+  #headerwrapper {
+    float: left;
+    clear: both;
+  }
+
+
+
+}
+
+body {
+  background: url("../img/rag.png") repeat-x center;
+  background-color: #e4e4e4;
+
+  background-position: top;
+
+}
+
+#wrapper {
+
+}
+
+#col1 {
+  width: 25%;
+  float: left;
+  margin-top: 40px;
+}
+
+#logobg{
+  position: relative;
+  width: 300px;
+}
+
+#logotext {
+  position: absolute;
+  top: 175px;
+  left: 85px;
+}
+
+.headerwrapper, .bodywrapper {
+  width: 75%;
+  margin-top: 40px;
+  float: right;
+}
+
+.headercol {
+  width: 400px;
+  float: left;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  overflow: none;
+  color: #890101;
+}
+
+.line {
+  border-bottom: 1px solid black;
+}
+
+.ornament {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+
+  /*width: 30%;*/
+}
+
+#the:hover ~ .line > .ornament {
+  display: block;
+}
+
+#victors {
+  display: table;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#victors:before, #victors:after {
+  content: "";
+  width: 50%;
+  background: url("../img/ornament.png") repeat-x center center;
+
+  display: table-cell;
+  background-clip: padding-box;
+}
+
+#victors:before {
+  border-right: 10px solid transparent;
+}
+
+#victors::after {
+  border-left: 10px solid transparent;
+}
+
+
+.gallerycol {
+  width: 16%;
+  float: left;
+  text-align: center;
+  color: #890101;
+}
+
+.image {
+  width: 85%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+#italicword {
+  font-style: italic;
+}
+
+#italicword::before {
+  content: " work";
+}
+
+.small {
+  font-size: 12px;
+  line-height: 2px;
+}
+
+.large {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2px;
+  letter-spacing: 2px;
+}
