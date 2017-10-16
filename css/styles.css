@@ -2,27 +2,21 @@
   width: device-width;
 }
 
-@media screen and (max-width:1499px) {
-  #headerwrapper {
-    float: left;
-    clear: both;
-  }
 
-
-
-}
 
 body {
   background: url("../img/rag.png") repeat-x center;
   background-color: #e4e4e4;
-
   background-position: top;
-
+  text-shadow: white;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Georgia;
 }
 
-#wrapper {
-
+p {
+  line-height: 22px;
 }
+
 
 #col1 {
   width: 25%;
@@ -41,14 +35,16 @@ body {
   left: 85px;
 }
 
-.headerwrapper, .bodywrapper {
-  width: 75%;
+.bodywrapper {
+  /*width: 75%;*/
   margin-top: 40px;
   float: right;
+  margin-left: 300px;
+  position: absolute;
 }
 
 .headercol {
-  width: 400px;
+  width: 20%;
   float: left;
   text-align: center;
   margin: 20px;
@@ -137,4 +133,108 @@ h3 {
   font-weight: bold;
   line-height: 2px;
   letter-spacing: 2px;
+}
+
+
+@media screen and (max-width:1199px) {
+  #headerwrapper {
+    clear: both;
+    display: inline;
+    width: 295px;
+    float: left;
+    overflow: none;
+  }
+
+  .headercol {
+    width: 95%;
+    float: left;
+    text-align: center;
+    margin: 0px;
+    overflow: none;
+    color: #890101;
+    }
+
+  #col1 {
+    width: 30%;
+    float: left;
+    margin-top: 40px;
+  }
+
+  .gallerycol {
+    width: 30%;
+    /*float: left;*/
+    text-align: center;
+    color: #890101;
+  }
+  .small, .large {
+    font-size: 12px;
+    /*font-family: sans-serif;*/
+  }
+}
+
+@media screen and (max-width:599px) {
+
+  /*#col1 {
+    display: none;
+  }*/
+
+  #logobg{
+    display: none;
+  }
+
+  #logotext {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+    float: left;
+    margin: 3px;
+  }
+
+    #headerwrapper {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 100%
+  }
+
+  .headercol {
+    /*float: left;*/
+    width: 30%;
+    text-align: center;
+    /*overflow: none;*/
+    color: #890101;
+    /*position: absolute;*/
+    /*top: 0px;*/
+  }
+
+  .small, .large {
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
+  .bodywrapper {
+    /*width: 75%;*/
+    margin-top: 80px;
+    clear: both;
+    margin-left: 0px;
+    position: relative;
+  }
+
+  .line {
+  width: 100%;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: lighter;
+  margin-bottom: 1px;
+}
+
+#victors {
+  font-size: 26px;
+}
+
 }
